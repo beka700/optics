@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import ProductTabs from "../ProductTabs/ProductTabs";
-import "./ProductDetails.css";
+import "./productDetails.css";
 import { BsMoon, BsCloudSnow, BsCloudSun, BsSun, BsBoxSeam, BsArrowLeft, BsCart } from "react-icons/bs";
 import { LuSunDim } from "react-icons/lu";
 import { TfiTruck } from "react-icons/tfi";
