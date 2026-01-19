@@ -1,0 +1,130 @@
+.article-content-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 32px 16px;
+  background-color: #F6F6F6;
+}
+
+.article-content-container {
+  max-width: 1250px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-content-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.article-back-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.article-breadcrumb {
+  font-size: 14px;
+  color: #777;
+}
+
+.article-content-title {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.article-content-meta {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 40px;
+  color: #000000;
+  font-size: 16px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.article-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.us{
+    font-size: 35px;
+    font-weight: 100;
+    color: #555;
+    margin-bottom: 2px;
+    margin-right: 10px;
+    align-items: center;
+}
+.article-main-content {
+  max-width: 800px;
+  width: 100%;
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.article-main-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  color: #222;
+  text-align: justify;
+}
+
+.article-main-content img {
+  width: 100%;
+  height: auto;
+  margin: 32px 0;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .article-content-title {
+    font-size: 32px;
+  }
+
+  .article-content-meta {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .article-main-content {
+    padding: 24px 16px;
+  }
+
+  .article-content-top {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .article-content-page {
+    padding: 16px 8px;
+  }
+
+  .article-content-title {
+    font-size: 28px;
+    padding: 0 16px;
+  }
+
+  .article-content-meta {
+    flex-direction: column;
+    align-items: center;
+  }
+}

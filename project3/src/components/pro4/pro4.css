@@ -1,0 +1,291 @@
+.pro4 {
+  background: #ABCDD6;
+  margin: auto;
+  max-width: 1250px;
+  background: linear-gradient(
+    to top,
+    #9cc5d0,
+    #F7F7F7
+  );
+  width: 100%;
+}
+
+.pro4__container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.pro4__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.pro4__title {
+  font-size: 26px;
+  letter-spacing: 2px;
+  font-weight: 100;
+  margin: 0;
+}
+
+.pro4__link {
+  font-size: 14px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 5px 0;
+}
+
+.pro4__link:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.pro4__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.pro4__card {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.pro4__card:hover {
+  transform: translateY(-5px);
+}
+
+.pro4__img, .pro4__img1 {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  display: block;
+}
+
+.pro4__card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.65),
+    rgba(0,0,0,0)
+  );
+  transition: opacity 0.3s ease;
+}
+
+.pro4__card:hover::after {
+  opacity: 0.8;
+}
+
+.pro4__text {
+  position: absolute;
+  bottom: 28px;
+  left: 19px;
+  letter-spacing: 0.4px;
+  right: 18px;
+  color: #fff;
+  font-size: 18px;
+  z-index: 2;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Адаптивные стили */
+@media screen and (max-width: 1200px) {
+  .pro4__cards {
+    gap: 12px;
+  }
+  
+  .pro4__card {
+    height: 380px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .pro4__cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .pro4__card {
+    height: 400px;
+  }
+  
+  .pro4__container {
+    padding: 35px 20px 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pro4__cards {
+    gap: 15px;
+  }
+  
+  .pro4__card {
+    height: 350px;
+  }
+  
+  .pro4__container {
+    padding: 30px 15px 40px;
+  }
+  
+  .pro4__title {
+    font-size: 24px;
+  }
+  
+  .pro4__text {
+    font-size: 17px;
+    bottom: 25px;
+    left: 15px;
+    right: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .pro4__cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .pro4__card {
+    height: 400px;
+    max-width: 100%;
+  }
+  
+  .pro4__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .pro4__title {
+    font-size: 22px;
+  }
+  
+  .pro4__link {
+    font-size: 13px;
+  }
+  
+  .pro4__container {
+    padding: 25px 15px 35px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pro4__card {
+    height: 350px;
+  }
+  
+  .pro4__text {
+    font-size: 16px;
+    bottom: 20px;
+    left: 12px;
+    right: 12px;
+  }
+  
+  .pro4__title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .pro4__card {
+    height: 320px;
+  }
+  
+  .pro4__text {
+    font-size: 15px;
+    bottom: 18px;
+  }
+  
+  .pro4__container {
+    padding: 20px 12px 30px;
+  }
+}
+
+/* Для тач-устройств */
+@media (hover: none) and (pointer: coarse) {
+  .pro4__card:active {
+    transform: translateY(-3px);
+  }
+}
+
+/* Высокие экраны */
+@media screen and (min-height: 800px) and (min-width: 992px) {
+  .pro4__card {
+    height: 450px;
+  }
+}
+
+/* Поддержка темной темы */
+@media (prefers-color-scheme: dark) {
+  .pro4 {
+    background: linear-gradient(
+      to top,
+      #2a4d56,
+      #1a1a1a
+    );
+  }
+  
+  .pro4__title {
+    color: #f0f0f0;
+  }
+  
+  .pro4__link {
+    color: #a0a0a0;
+  }
+  
+  .pro4__link:hover {
+    color: #ffffff;
+  }
+}
+
+/* Для печати */
+@media print {
+  .pro4 {
+    background: none !important;
+    border: 1px solid #ddd;
+  }
+  
+  .pro4__card {
+    break-inside: avoid;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .pro4__img, .pro4__img1 {
+    height: 200px;
+  }
+  
+  .pro4__text {
+    color: #000;
+    position: static;
+    padding: 10px;
+    background: white;
+  }
+  
+  .pro4__card::after {
+    display: none;
+  }
+}

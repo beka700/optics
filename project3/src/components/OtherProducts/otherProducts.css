@@ -1,0 +1,173 @@
+.other-products-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.other-products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.other-product-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: white;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  overflow: hidden;
+}
+
+.other-product-card:hover {
+  border-color: #ccc;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.other-product-image-container {
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.other-product-image {
+  width: auto;
+  height: auto;
+  max-width: 220px;
+  max-height: 220px;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.other-product-card:hover .other-product-image {
+  transform: scale(1.08);
+}
+
+.other-product-info {
+  padding: 25px;
+}
+
+.other-product-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 8px;
+  letter-spacing: 0.2px;
+}
+
+.other-product-description {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  min-height: 45px;
+}
+
+.rating-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.stars {
+  display: flex;
+  gap: 3px;
+}
+
+.star-icon {
+  font-size: 16px;
+  color: #f5b301;
+  fill: #f5b301;
+}
+
+.review-count {
+  font-size: 14px;
+  color: #777;
+  font-weight: 400;
+}
+
+.price-section {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.current-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+@media (max-width: 1024px) {
+  .other-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .other-products-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .other-product-image-container {
+    height: 240px;
+    padding: 15px;
+  }
+  
+  .other-product-image {
+    max-width: 180px;
+    max-height: 180px;
+  }
+  
+  .other-product-info {
+    padding: 20px;
+  }
+  
+  .other-product-name {
+    font-size: 17px;
+  }
+  
+  .other-product-description {
+    font-size: 14px;
+  }
+  
+  .current-price {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .other-products-grid {
+    gap: 20px;
+  }
+  
+  .other-product-image-container {
+    height: 200px;
+    padding: 10px;
+  }
+  
+  .other-product-image {
+    max-width: 160px;
+    max-height: 160px;
+  }
+}

@@ -1,0 +1,109 @@
+.pro8{
+    margin: auto;
+    max-width: 1250px;
+    display: flex;
+    background: 
+        linear-gradient(rgba(95, 95, 95, 0.9), rgba(44, 44, 44, 0.9)),
+        url(../../assets/Rectangle\ 6.png);
+    width: 1250px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+}
+.inp8 {
+    background-color: transparent; 
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 6px;
+    width: 300px;
+    margin-top: 60px;
+    margin-left: 100px;
+}
+
+.inp8::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+.inp8:focus {
+    outline: none;
+    border-color: #FFFFFF;
+}
+.galochka input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent; 
+    border: 1px solid #FFFFFF; 
+    border-radius: 3px;
+    position: relative;
+    margin-left: 100px;
+}
+.galochka input[type="checkbox"]:checked {
+    background-color: #FFFFFF;
+}
+.galochka input[type="checkbox"]:checked::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000; 
+    font-size: 12px;
+    font-weight: bold;
+}
+.pro-btn {
+    border: 1px solid #FFFFFF; 
+    color: #0A0A0A;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.pro-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: #FFFFFF;
+}
+
+.galochka {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.galochka label {
+    cursor: pointer;
+}
+
+.galochka a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.galochka a:hover {
+    text-decoration: none;
+}
+
+.pro8-p{
+    color: #abaaaa;
+    font-size: 14px;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.pro8-h{
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 100;
+    padding-left: 50px;
+    letter-spacing: 1px;
+}

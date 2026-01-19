@@ -1,0 +1,161 @@
+/* Search Styles */
+.search-container {
+  position: relative;
+}
+
+.search-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 350px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  z-index: 1001;
+  margin-top: 10px;
+}
+
+.search-form {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 2px solid #667eea;
+  border-radius: 6px 0 0 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #764ba2;
+}
+
+.search-submit {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.search-submit:hover {
+  background: #764ba2;
+}
+
+.search-results {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.search-result-item {
+  padding: 12px 15px;
+  border-bottom: 1px solid #f5f5f5;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.search-result-item:hover {
+  background: #f8f9fa;
+}
+
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+.result-name {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.result-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #666;
+}
+
+.result-category {
+  text-transform: capitalize;
+  padding: 2px 8px;
+  background: #e9ecef;
+  border-radius: 4px;
+}
+
+.result-price {
+  font-weight: 600;
+  color: #28a745;
+}
+
+.no-results {
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  font-style: italic;
+}
+
+.search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+/* Header Icons */
+.header__icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.header__icon1 {
+  font-size: 22px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.header__icon1:hover {
+  color: #667eea;
+}
+
+.header__icon {
+  font-size: 22px;
+  color: #333;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.header__icon:hover {
+  color: #667eea;
+}
+
+.user-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #FF5722;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}

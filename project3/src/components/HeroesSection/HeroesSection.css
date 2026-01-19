@@ -1,0 +1,143 @@
+.heroes-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.heroes-header {
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.heroes-title {
+  font-size: 52px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  margin-bottom: 25px;
+  color: #000;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+}
+
+.heroes-description {
+  color: #333;
+  font-size: 17px;
+  text-align: center;
+}
+
+.heroes-description p {
+  margin-bottom: 15px;
+}
+
+.heroes-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-left: 170px;
+}
+
+.filter-btn {
+  padding: 10px 24px;
+  background: transparent;
+  border: 1px solid #000;
+  border-radius: 25px;
+  font-size: 14px;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+.filter-btn:hover {
+  background: #000;
+  color: white;
+}
+
+.filter-btn.active {
+  background: #000;
+  color: white;
+}
+
+.heroes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.hero-card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.hero-card:hover {
+  transform: translateY(-4px);
+}
+
+.hero-image {
+  width: 100%;
+  height: 350px;
+  background: #e8e8e8;
+  margin-bottom: 15px;
+  border-radius: 3px;
+}
+
+.hero-info {
+  padding: 0 5px;
+}
+
+.hero-info h3 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  color: #000;
+  letter-spacing: -0.3px;
+}
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.hero-tags span {
+  font-size: 12px;
+  color: #666;
+  padding: 4px 10px;
+  background: #f5f5f5;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .heroes-title {
+    font-size: 36px;
+  }
+  
+  .heroes-description {
+    font-size: 15px;
+  }
+  
+  .heroes-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  
+  .hero-image {
+    height: 250px;
+  }
+  
+  .hero-info h3 {
+    font-size: 18px;
+  }
+}

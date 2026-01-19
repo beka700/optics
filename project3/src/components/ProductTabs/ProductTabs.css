@@ -1,0 +1,185 @@
+.product-tabs-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #F6F6F6;
+}
+
+.product-tabs-header {
+  border-bottom: 1px solid #c1c1c1;
+}
+
+.tabs-wrapper {
+  display: flex;
+  gap: 40px;
+  padding-bottom: 10px;
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  padding: 15px 0;
+  font-size: 15px;
+  color: #777;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.tab-button:hover {
+  color: #333;
+  transform: translateY(-1px);
+}
+
+.tab-button.active {
+  color: #000;
+  font-weight: 700;
+}
+
+.tab-button.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #000;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+.product-tabs-content {
+  min-height: 600px;
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.lens-card,
+.accessory-card,
+.other-product-card {
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.lens-card:hover,
+.accessory-card:hover,
+.other-product-card:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.star-icon {
+  transition: transform 0.2s ease;
+}
+
+.star-icon:hover {
+  transform: scale(1.2);
+}
+
+.lens-image,
+.accessory-image,
+.other-product-image {
+  transition: transform 0.5s ease;
+}
+
+.lens-card:hover .lens-image,
+.accessory-card:hover .accessory-image,
+.other-product-card:hover .other-product-image {
+  transform: scale(1.08);
+}
+
+.add-to-cart-button {
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+.add-to-cart-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .product-tabs-container {
+    padding: 20px 16px;
+  }
+  
+  .tabs-wrapper {
+    gap: 20px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 5px;
+  }
+  
+  .tab-button {
+    padding: 12px 0;
+    font-size: 14px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+  }
+  
+  .tab-button:hover {
+    transform: none;
+  }
+  
+  .product-tabs-content {
+    animation: fadeInMobile 0.3s ease-out;
+  }
+  
+  @keyframes fadeInMobile {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .lens-card:hover,
+  .accessory-card:hover,
+  .other-product-card:hover {
+    transform: translateY(-3px);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes contentAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.lenses-grid,
+.accessories-grid,
+.other-products-grid {
+  animation: contentAppear 0.5s ease-out;
+}

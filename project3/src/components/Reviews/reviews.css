@@ -1,0 +1,184 @@
+.reviews-section {
+  background-color: #fff;
+  padding: 60px 20px;
+}
+
+.reviews-wrapper {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.reviews-heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.reviews-summary {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.reviews-rating {
+  display: flex;
+  align-items: flex-end;
+}
+
+.reviews-rating-value {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.reviews-rating-max {
+  font-size: 24px;
+  margin-left: 5px;
+  color: #777;
+}
+
+.reviews-stars {
+  display: flex;
+  gap: 4px;
+}
+
+.reviews-count {
+  font-size: 14px;
+  color: #777;
+  margin-top: 6px;
+}
+.star-icon {
+  color: #f5a623;
+  font-size: 18px;
+}
+
+.reviews-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.review-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.review-card-header {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.review-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review-user-name {
+  margin: 0;
+  font-size: 15px;
+}
+
+.review-user-verified {
+  font-size: 12px;
+  color: green;
+}
+
+.review-card-stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.review-title {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.review-text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.review-footer {
+  border-top: 1px solid #eee;
+  margin-top: 15px;
+  padding-top: 10px;
+}
+
+.review-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.review-like,
+.review-dislike {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  color: #555;
+  font-size: 14px;
+}
+
+.review-like svg {
+  color: #2e7d32;
+}
+
+.review-dislike svg {
+  color: #c62828;
+}
+
+.reviews-button {
+  margin: 40px auto 0;
+  display: block;
+  padding: 12px 32px;
+  background-color: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.review-like,
+.review-dislike {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  color: #555;
+  font-size: 14px;
+  padding: 4px 8px;
+  transition: all 0.2s;
+}
+
+.review-like svg,
+.review-dislike svg {
+  color: #999;
+}
+
+.review-like span,
+.review-dislike span {
+  color: #000;
+}
+
+.review-like.active svg,
+.review-like.active span,
+.review-dislike.active svg,
+.review-dislike.active span {
+  color: #000;
+}
+
+.review-like.active,
+.review-dislike.active {
+  font-weight: 600;
+}
