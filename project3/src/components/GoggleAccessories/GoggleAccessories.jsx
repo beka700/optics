@@ -1,5 +1,5 @@
 import React from 'react';
-import './GoggleAccessories.css';
+import './goggleAccessories.css';
 import { FaStar } from 'react-icons/fa';
 import google1 from '../../assets/google1.png';
 import google2 from '../../assets/google2.png';
