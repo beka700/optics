@@ -1,4 +1,4 @@
-import "./ProductDescription.css";
+import "./productDescription.css";
 import { WiStars, WiCloudyWindy } from "react-icons/wi";
 import { BsShieldCheck, BsEye, BsSun } from "react-icons/bs";
 import { FiFeather } from "react-icons/fi";
