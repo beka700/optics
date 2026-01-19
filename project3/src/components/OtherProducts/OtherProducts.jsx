@@ -1,5 +1,5 @@
 import React from 'react';
-import './OtherProducts.css';
+import './otherProducts.css';
 import { FaStar } from 'react-icons/fa';
 import other1 from '../../assets/other.png';
 import other2 from '../../assets/other1.png';
