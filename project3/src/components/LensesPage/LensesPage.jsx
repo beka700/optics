@@ -1,5 +1,5 @@
 import React from 'react';
-import './LensesPage.css';
+import './lensesPage.css';
 import { FaStar } from 'react-icons/fa';
 import lens1 from '../../assets/lenses.png';
 import lens2 from '../../assets/lenses1.png';
